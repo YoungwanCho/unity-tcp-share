@@ -21,7 +21,7 @@ namespace NetworkLibrary
             _maxTurn.n = random.Next();
             _leftTime.f = random.Next();
 
-            _totalSize.n = (byte)this.GetSize();
+            _totalSize.n = (short)this.GetSize();
         }
 
         public override string ToString()

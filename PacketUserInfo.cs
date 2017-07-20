@@ -36,17 +36,17 @@ public class PacketUserInfo : Packet
         Random random = new Random();
 
         name.str = "cho";
-        age.n = random.Next();
+        age.n = (int)random.Next();
         pbyte.n = (byte)random.Next();
         psbyte.n = (sbyte)random.Next();
         pshort.n = (short)random.Next();
-        pinteger.n = random.Next();
+        pinteger.n = (int)random.Next();
         puinteger.n = (uint)random.Next();
-        pfloat.f = random.Next();
-        plong.n = random.Next();
+        pfloat.f = (float)random.Next();
+        plong.n = (long)random.Next();
         pulong.n = (ulong)random.Next();
 
-        _totalSize.n = (byte)this.GetSize();
+        _totalSize.n = (short)this.GetSize();
     }
 
     public override string ToString()
