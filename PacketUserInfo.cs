@@ -16,7 +16,7 @@ public class PacketUserInfo : Packet
     private PLong plong = new PLong();
     private PULong pulong = new PULong();
 
-    public PacketUserInfo(int sup) : base(sup, 10)
+    public PacketUserInfo(int packetType) : base(packetType, 10)
     {
         _field[0] = name;
         _field[1] = age;
