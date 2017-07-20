@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Text;
 using NetworkLibrary;
-using NetworkLibrary.PacketType;
 
 public class PacketUserInfo : Packet
 {
