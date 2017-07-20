@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace NetworkLibrary.PacketType
+namespace NetworkLibrary
 {
     public abstract class PrimitiveType
     {
