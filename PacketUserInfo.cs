@@ -33,17 +33,18 @@ public class PacketUserInfo : Packet
 
     public void InitPacketUserInfo()
     {
-        name.str = "cho";
-        age.n = 12;
+        Random random = new Random();
 
-        pbyte.n = 100;
-        psbyte.n = 101;
-        pshort.n = 102;
-        pinteger.n = 103;
-        puinteger.n = 104;
-        pfloat.f = 105;
-        plong.n = 106;
-        pulong.n = 107;
+        name.str = "cho";
+        age.n = random.Next();
+        pbyte.n = (byte)random.Next();
+        psbyte.n = (sbyte)random.Next();
+        pshort.n = (short)random.Next();
+        pinteger.n = random.Next();
+        puinteger.n = (uint)random.Next();
+        pfloat.f = random.Next();
+        plong.n = random.Next();
+        pulong.n = (ulong)random.Next();
 
         _totalSize.n = (byte)this.GetSize();
     }
